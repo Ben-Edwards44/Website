@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="eu">
+    <head>
+        <link rel="stylesheet" href="/static/Scripts/main_style.css">
+    </head>
+
+    <body>
+        <img id="background_img" src="/static/Images/background.png">
+
+        <h1 id="title">Ben Edwards</h1>
+    
+        <div id="inner_layer">
+            <div id="ascii_art">
+                <p1>{{ ascii_art }}</p1>
+            </div>
+            
+            <p1 id="welcome_text"></p1>
+        
+            <div id="button_container">
+                <button type="button" class="button" id="about_button" onclick="about_pressed()">About me</button>
+                <button type="button" class="button" id="projects_button" onclick="projects_pressed()">My projects</button>
+                <button type="button" class="button" id="contact_button" onclick="contact_pressed()">Contact me</button>
+            </div>
+        
+            <div id="button_data"></div>
+
+            <form id="contact_form" style="display:none">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" size="40"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" size="40"><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" style="width: 400px;"></textarea><br>
+                <button type="button" class="button" id="submit_button" onclick="submit_pressed()">Submit</button>
+            </form>
+        </div>
+
+        <script src="/static/Scripts/main_script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,3 @@
+Hello, I'm Ben, a year 11 student currently preparing for my GCSEs.
+
+This is a website designed to showcase my different programming projects.
